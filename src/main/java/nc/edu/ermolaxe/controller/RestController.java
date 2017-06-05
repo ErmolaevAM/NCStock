@@ -23,14 +23,12 @@ public class RestController {
             return imageServiceDAO.getImageList(1);
         } catch (IOException e) {
             e.printStackTrace();
+            return null;
         }
-        List<Image> images = new ArrayList<Image>();
-        Image img = new Image();
-        img.setId("-1");
-        img.setUrls(new ArrayList<String>());
-        return images;
     }
 
+
+    /*------test methods------*/
     @RequestMapping("/test")
     public @ResponseBody String test() {
         String str = new String("this is test JSON message");
@@ -43,6 +41,4 @@ public class RestController {
         urls.add("https://ermolaxe/image/143");
         return new Image("43", urls);
     }
-
-
 }

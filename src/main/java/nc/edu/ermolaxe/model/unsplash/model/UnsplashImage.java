@@ -34,6 +34,8 @@ public class UnsplashImage {
 
     private Link links;
 
+    /*------constructors and get/set methods------*/
+
     public UnsplashImage() {
     }
 
