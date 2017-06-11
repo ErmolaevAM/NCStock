@@ -20,7 +20,7 @@ public class RestController {
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public @ResponseBody List<Image> info() {
         try {
-            return imageServiceDAO.getImageList(1);
+            return imageServiceDAO.getImageList();
         } catch (IOException e) {
             e.printStackTrace();
             return null;
@@ -35,10 +35,4 @@ public class RestController {
         return str;
     }
 
-    @RequestMapping("/one")
-    public @ResponseBody Image one() {
-        List<String> urls = new ArrayList<String>();
-        urls.add("https://ermolaxe/image/143");
-        return new Image("43", urls);
-    }
 }

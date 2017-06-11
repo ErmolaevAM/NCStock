@@ -1,6 +1,5 @@
 package nc.edu.ermolaxe.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import java.util.List;
 
@@ -9,39 +8,75 @@ import java.util.List;
  */
 public class Image {
 
-    private String id;
+    private int width;
 
-    private List<String> urls;
+    private int height;
+
+    private String username;
+
+    private int likes;
+
+    private List<String> tags;
+
+    private String url;
 
     public Image() {
     }
 
-    public Image(String id, List<String> urls) {
-        this.id = id;
-        this.urls = urls;
+    public Image(int width, int height, String user_name, int likes, List<String> tags, String url) {
+        this.width = width;
+        this.height = height;
+        this.username = user_name;
+        this.likes = likes;
+        this.tags = tags;
+        this.url = url;
     }
 
-    public String getId() {
-        return id;
+    public int getWidth() {
+        return width;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setWidth(int width) {
+        this.width = width;
     }
 
-    public List<String> getUrls() {
-        return urls;
+    public int getHeight() {
+        return height;
     }
 
-    public void setUrls(List<String> urls) {
-        this.urls = urls;
+    public void setHeight(int height) {
+        this.height = height;
     }
 
-    @Override
-    public String toString() {
-        return "Image{" +
-                "id='" + id + '\'' + '\n'+
-                ", urls=" + urls +
-                '}';
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public int getLikes() {
+        return likes;
+    }
+
+    public void setLikes(int likes) {
+        this.likes = likes;
+    }
+
+    public List<String> getTags() {
+        return tags;
+    }
+
+    public void setTags(List<String> tags) {
+        this.tags = tags;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 }

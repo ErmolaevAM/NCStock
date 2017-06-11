@@ -21,7 +21,7 @@ public class Application {
         ImageServiceDAO dao = new UnsplashDaoImpl();
 
         try {
-            dao.getImageList(1);
+            dao.getImageList();
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -9,5 +9,6 @@ import java.util.List;
  * Created by Александр on 31.05.2017.
  */
 public interface ImageServiceDAO {
-    List<Image> getImageList(int listSize) throws IOException;
+    List<Image> getImageList() throws IOException;
+    List<Image> getPhotoByTag(String tag);
 }

@@ -1,40 +1,41 @@
 package nc.edu.ermolaxe.service.impl;
 
-import nc.edu.ermolaxe.model.Image;
-import nc.edu.ermolaxe.model.unsplash.model.UnsplashImage;
-import nc.edu.ermolaxe.utils.ImageConverter;
-import nc.edu.ermolaxe.service.ImageServiceDAO;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import nc.edu.ermolaxe.model.Image;
+import nc.edu.ermolaxe.model.pixabay.model.PixabayJsonResponse;
+import nc.edu.ermolaxe.model.unsplash.model.UnsplashImage;
+import nc.edu.ermolaxe.service.ImageServiceDAO;
+import nc.edu.ermolaxe.utils.ImageConverter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.slf4j.event.Level;
-import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-@Service
-public class UnsplashDaoImpl implements ImageServiceDAO {
+/**
+ * Created by Александр on 11.06.2017.
+ */
+public class PixabayDaoImpl implements ImageServiceDAO {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(UnsplashDaoImpl.class);
-    private static final String onePageUrl = "https://api.unsplash.com/photos/?client_id=17ffc1d2fd01e2390b5e69a6ae6a970d1299966a33d4baa56f61f3816265b64f&page=1&per_page=100";
+    private static final Logger LOGGER = LoggerFactory.getLogger(PixabayDaoImpl.class);
+    private static final String onePageUrl = "https://pixabay.com/api/?key=5607958-00884c51bf718500bfe2f5c53&page=1&per_page=100";
     //вопрос: как быть со страницей? Можно брать рандомное число при каждом новом запросе в качестве страницы (как не выйти за границы кол-ва всех страниц)?
 
     private ObjectMapper objectMapper = new ObjectMapper();
 
-    public UnsplashDaoImpl() {
+    public PixabayDaoImpl() {
     }
 
     public List<Image> getImageList() throws IOException {
         LOGGER.info("User requested a list of new photos.");
         List<Image> result = new ArrayList<Image>();
         try {
-            List<UnsplashImage> imgList= objectMapper.readValue(new URL(onePageUrl),
-                    objectMapper.getTypeFactory().constructCollectionType(List.class, UnsplashImage.class));
+            PixabayJsonResponse pixabayJsonResponse = objectMapper.readValue(new URL(onePageUrl), PixabayJsonResponse.class);
 
-            result = ImageConverter.convertImageFromUnsplash(imgList);
+            result = ImageConverter.convertImageFromPixabay(pixabayJsonResponse);
 
             /*------test------*/
             for (Image item : result) {
@@ -50,17 +51,6 @@ public class UnsplashDaoImpl implements ImageServiceDAO {
     }
 
     public List<Image> getPhotoByTag(String tag) {
-
-        /*поиск по коллекции осуществляется так, нужно получить id коллекции по запросу типа:
-        * GET /search/collections?query=terms
-        * потом запросить фотографии из коллекции по запросу типа:
-        * GET /collections/:id/photos?page=number&per_page=count*/
-
         return null;
     }
-
-    /*@Bean
-    private ObjectMapper objectMapper(){
-        return new ObjectMapper();
-    }*/
 }
