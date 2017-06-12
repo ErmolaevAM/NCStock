@@ -2,7 +2,7 @@ package nc.edu.ermolaxe.service.impl;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import nc.edu.ermolaxe.model.Image;
-import nc.edu.ermolaxe.model.pixabay.model.PixabayJsonResponse;
+import nc.edu.ermolaxe.model.pexels.model.PexelsJsonResponse;
 import nc.edu.ermolaxe.service.ImageServiceDAO;
 import nc.edu.ermolaxe.utils.ImageConverter;
 import org.slf4j.Logger;
@@ -16,27 +16,26 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Александр on 11.06.2017.
+ * Created by Александр on 12.06.2017.
  */
 @Service
-public class PixabayDaoImpl implements ImageServiceDAO {
+public class PexelsDaoImpl implements ImageServiceDAO {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(PixabayDaoImpl.class);
-    private static final String onePageUrl = "https://pixabay.com/api/?key=5607958-00884c51bf718500bfe2f5c53&page=1&per_page=100";
-    //вопрос: как быть со страницей? Можно брать рандомное число при каждом новом запросе в качестве страницы (как не выйти за границы кол-ва всех страниц)?
+    private static final Logger LOGGER = LoggerFactory.getLogger(PexelsDaoImpl.class);
+    private static final String onePageUrl = "";
 
     private ObjectMapper objectMapper = new ObjectMapper();
 
-    public PixabayDaoImpl() {
+    public PexelsDaoImpl() {
     }
 
     public List<Image> getImageList() throws IOException {
         LOGGER.info("User requested a list of new photos.");
         List<Image> result = new ArrayList<Image>();
         try {
-            PixabayJsonResponse pixabayJsonResponse = objectMapper.readValue(new URL(onePageUrl), PixabayJsonResponse.class);
+            PexelsJsonResponse pexelsJsonResponse = objectMapper.readValue(new URL(onePageUrl),PexelsJsonResponse.class);
 
-            result = ImageConverter.convertImageFromPixabay(pixabayJsonResponse);
+            result = ImageConverter.convertImageFromPexels(pexelsJsonResponse);
 
             LOGGER.info("The list of photos has been successfully received.");
         } catch (IOException ex) {

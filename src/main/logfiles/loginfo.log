@@ -1,31 +1,211 @@
-2017-06-11 20:17:01 INFO  nc.edu.ermolaxe.Application:48 method: logStarting - Starting Application on Hobbit-PC with PID 2824 (D:\ermolaxe\IdeaProjects\homedev.spring\rest\rest.springboot\SpringREST\target\classes started by Александр in D:\ermolaxe\IdeaProjects\homedev.spring\rest\rest.springboot\SpringREST)
-2017-06-11 20:17:01 INFO  nc.edu.ermolaxe.Application:661 method: logStartupProfileInfo - No active profile set, falling back to default profiles: default
-2017-06-11 20:17:01 INFO  springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext:582 method: prepareRefresh - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@10d59286: startup date [Sun Jun 11 20:17:01 GMT+04:00 2017]; root of context hierarchy
-2017-06-11 20:17:01 INFO  hibernate.validator.internal.util.Version:30 method: <clinit> - HV000001: Hibernate Validator 5.2.4.Final
-2017-06-11 20:17:02 INFO  boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:87 method: initialize - Tomcat initialized with port(s): 8080 (http)
-2017-06-11 20:17:02 INFO  org.springframework.web.context.ContextLoader:276 method: prepareEmbeddedWebApplicationContext - Root WebApplicationContext: initialization completed in 1267 ms
-2017-06-11 20:17:02 INFO  springframework.boot.web.servlet.ServletRegistrationBean:190 method: onStartup - Mapping servlet: 'dispatcherServlet' to [/]
-2017-06-11 20:17:02 INFO  springframework.boot.web.servlet.FilterRegistrationBean:258 method: configure - Mapping filter: 'characterEncodingFilter' to: [/*]
-2017-06-11 20:17:02 INFO  springframework.boot.web.servlet.FilterRegistrationBean:258 method: configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2017-06-11 20:17:02 INFO  springframework.boot.web.servlet.FilterRegistrationBean:258 method: configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2017-06-11 20:17:02 INFO  springframework.boot.web.servlet.FilterRegistrationBean:258 method: configure - Mapping filter: 'requestContextFilter' to: [/*]
-2017-06-11 20:17:02 INFO  servlet.mvc.method.annotation.RequestMappingHandlerAdapter:534 method: initControllerAdviceCache - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@10d59286: startup date [Sun Jun 11 20:17:01 GMT+04:00 2017]; root of context hierarchy
-2017-06-11 20:17:02 INFO  servlet.mvc.method.annotation.RequestMappingHandlerMapping:543 method: register - Mapped "{[/test]}" onto public java.lang.String nc.edu.ermolaxe.controller.RestController.test()
-2017-06-11 20:17:02 INFO  servlet.mvc.method.annotation.RequestMappingHandlerMapping:543 method: register - Mapped "{[/],methods=[GET]}" onto public java.util.List<nc.edu.ermolaxe.model.Image> nc.edu.ermolaxe.controller.RestController.info()
-2017-06-11 20:17:02 INFO  servlet.mvc.method.annotation.RequestMappingHandlerMapping:543 method: register - Mapped "{[/one]}" onto public nc.edu.ermolaxe.model.Image nc.edu.ermolaxe.controller.RestController.one()
-2017-06-11 20:17:02 INFO  servlet.mvc.method.annotation.RequestMappingHandlerMapping:543 method: register - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2017-06-11 20:17:02 INFO  servlet.mvc.method.annotation.RequestMappingHandlerMapping:543 method: register - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2017-06-11 20:17:02 INFO  springframework.web.servlet.handler.SimpleUrlHandlerMapping:354 method: registerHandler - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-06-11 20:17:02 INFO  springframework.web.servlet.handler.SimpleUrlHandlerMapping:354 method: registerHandler - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-06-11 20:17:02 INFO  springframework.web.servlet.handler.SimpleUrlHandlerMapping:354 method: registerHandler - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-06-11 20:17:02 INFO  springframework.jmx.export.annotation.AnnotationMBeanExporter:431 method: afterSingletonsInstantiated - Registering beans for JMX exposure on startup
-2017-06-11 20:17:02 INFO  boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:185 method: start - Tomcat started on port(s): 8080 (http)
-2017-06-11 20:17:02 INFO  nc.edu.ermolaxe.Application:57 method: logStarted - Started Application in 2.062 seconds (JVM running for 2.508)
-2017-06-11 20:17:02 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:31 method: getImageList - User requested a list of new photos.
-2017-06-11 20:17:03 INFO  nc.edu.ermolaxe.utils.ImageConverter:25 method: convertImageFromUnsplash - Convert from UnsplashImage class to default Image class.
-2017-06-11 20:17:03 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:43 method: getImageList - The list of photos has been successfully received.
-2017-06-11 20:19:43 INFO  org.springframework.web.servlet.DispatcherServlet:489 method: initServletBean - FrameworkServlet 'dispatcherServlet': initialization started
-2017-06-11 20:19:43 INFO  org.springframework.web.servlet.DispatcherServlet:508 method: initServletBean - FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
-2017-06-11 20:19:44 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:31 method: getImageList - User requested a list of new photos.
-2017-06-11 20:19:44 INFO  nc.edu.ermolaxe.utils.ImageConverter:25 method: convertImageFromUnsplash - Convert from UnsplashImage class to default Image class.
-2017-06-11 20:19:44 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:43 method: getImageList - The list of photos has been successfully received.
+2017-06-12 14:09:16 INFO  nc.edu.ermolaxe.Application:48 method: logStarting - Starting Application on Hobbit-PC with PID 3984 (D:\ermolaxe\IdeaProjects\homedev.spring\rest\rest.springboot\SpringREST\target\classes started by Александр in D:\ermolaxe\IdeaProjects\homedev.spring\rest\rest.springboot\SpringREST)
+2017-06-12 14:09:16 INFO  nc.edu.ermolaxe.Application:661 method: logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2017-06-12 14:09:16 INFO  springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext:582 method: prepareRefresh - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@10d59286: startup date [Mon Jun 12 14:09:16 GMT+04:00 2017]; root of context hierarchy
+2017-06-12 14:09:17 INFO  hibernate.validator.internal.util.Version:30 method: <clinit> - HV000001: Hibernate Validator 5.2.4.Final
+2017-06-12 14:09:18 INFO  boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:87 method: initialize - Tomcat initialized with port(s): 8080 (http)
+2017-06-12 14:09:18 INFO  org.springframework.web.context.ContextLoader:276 method: prepareEmbeddedWebApplicationContext - Root WebApplicationContext: initialization completed in 1599 ms
+2017-06-12 14:09:18 INFO  springframework.boot.web.servlet.ServletRegistrationBean:190 method: onStartup - Mapping servlet: 'dispatcherServlet' to [/]
+2017-06-12 14:09:18 INFO  springframework.boot.web.servlet.FilterRegistrationBean:258 method: configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-06-12 14:09:18 INFO  springframework.boot.web.servlet.FilterRegistrationBean:258 method: configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-06-12 14:09:18 INFO  springframework.boot.web.servlet.FilterRegistrationBean:258 method: configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-06-12 14:09:18 INFO  springframework.boot.web.servlet.FilterRegistrationBean:258 method: configure - Mapping filter: 'requestContextFilter' to: [/*]
+2017-06-12 14:09:18 INFO  servlet.mvc.method.annotation.RequestMappingHandlerAdapter:534 method: initControllerAdviceCache - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@10d59286: startup date [Mon Jun 12 14:09:16 GMT+04:00 2017]; root of context hierarchy
+2017-06-12 14:09:18 INFO  servlet.mvc.method.annotation.RequestMappingHandlerMapping:543 method: register - Mapped "{[/test]}" onto public java.lang.String nc.edu.ermolaxe.controller.RestController.test()
+2017-06-12 14:09:18 INFO  servlet.mvc.method.annotation.RequestMappingHandlerMapping:543 method: register - Mapped "{[/],methods=[GET]}" onto public java.util.List<nc.edu.ermolaxe.model.Image> nc.edu.ermolaxe.controller.RestController.info()
+2017-06-12 14:09:18 INFO  servlet.mvc.method.annotation.RequestMappingHandlerMapping:543 method: register - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-06-12 14:09:18 INFO  servlet.mvc.method.annotation.RequestMappingHandlerMapping:543 method: register - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-06-12 14:09:18 INFO  springframework.web.servlet.handler.SimpleUrlHandlerMapping:354 method: registerHandler - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-12 14:09:18 INFO  springframework.web.servlet.handler.SimpleUrlHandlerMapping:354 method: registerHandler - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-12 14:09:18 INFO  springframework.web.servlet.handler.SimpleUrlHandlerMapping:354 method: registerHandler - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-12 14:09:18 INFO  springframework.jmx.export.annotation.AnnotationMBeanExporter:431 method: afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+2017-06-12 14:09:18 INFO  boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:185 method: start - Tomcat started on port(s): 8080 (http)
+2017-06-12 14:09:18 INFO  nc.edu.ermolaxe.Application:57 method: logStarted - Started Application in 2.586 seconds (JVM running for 3.084)
+2017-06-12 14:09:27 INFO  org.springframework.web.servlet.DispatcherServlet:489 method: initServletBean - FrameworkServlet 'dispatcherServlet': initialization started
+2017-06-12 14:09:27 INFO  org.springframework.web.servlet.DispatcherServlet:508 method: initServletBean - FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2017-06-12 14:09:27 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:35 method: getImageList - User requested a list of new photos.
+2017-06-12 14:09:28 INFO  nc.edu.ermolaxe.utils.ImageConverter:38 method: convertImageFromUnsplash - Convert from UnsplashImage class to default Image class.
+2017-06-12 14:09:28 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:47 method: getImageList - The list of photos has been successfully received.
+
+
+2017-06-12 14:12:29 INFO  nc.edu.ermolaxe.Application:48 method: logStarting - Starting Application on Hobbit-PC with PID 4856 (D:\ermolaxe\IdeaProjects\homedev.spring\rest\rest.springboot\SpringREST\target\classes started by Александр in D:\ermolaxe\IdeaProjects\homedev.spring\rest\rest.springboot\SpringREST)
+2017-06-12 14:12:29 INFO  nc.edu.ermolaxe.Application:661 method: logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2017-06-12 14:12:29 INFO  springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext:582 method: prepareRefresh - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@10d59286: startup date [Mon Jun 12 14:12:29 GMT+04:00 2017]; root of context hierarchy
+2017-06-12 14:12:29 INFO  hibernate.validator.internal.util.Version:30 method: <clinit> - HV000001: Hibernate Validator 5.2.4.Final
+2017-06-12 14:12:30 INFO  boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:87 method: initialize - Tomcat initialized with port(s): 8080 (http)
+2017-06-12 14:12:30 INFO  org.springframework.web.context.ContextLoader:276 method: prepareEmbeddedWebApplicationContext - Root WebApplicationContext: initialization completed in 1563 ms
+2017-06-12 14:12:30 INFO  springframework.boot.web.servlet.ServletRegistrationBean:190 method: onStartup - Mapping servlet: 'dispatcherServlet' to [/]
+2017-06-12 14:12:30 INFO  springframework.boot.web.servlet.FilterRegistrationBean:258 method: configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-06-12 14:12:30 INFO  springframework.boot.web.servlet.FilterRegistrationBean:258 method: configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-06-12 14:12:30 INFO  springframework.boot.web.servlet.FilterRegistrationBean:258 method: configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-06-12 14:12:30 INFO  springframework.boot.web.servlet.FilterRegistrationBean:258 method: configure - Mapping filter: 'requestContextFilter' to: [/*]
+2017-06-12 14:12:31 INFO  servlet.mvc.method.annotation.RequestMappingHandlerAdapter:534 method: initControllerAdviceCache - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@10d59286: startup date [Mon Jun 12 14:12:29 GMT+04:00 2017]; root of context hierarchy
+2017-06-12 14:12:31 INFO  servlet.mvc.method.annotation.RequestMappingHandlerMapping:543 method: register - Mapped "{[/test]}" onto public java.lang.String nc.edu.ermolaxe.controller.RestController.test()
+2017-06-12 14:12:31 INFO  servlet.mvc.method.annotation.RequestMappingHandlerMapping:543 method: register - Mapped "{[/],methods=[GET]}" onto public java.util.List<nc.edu.ermolaxe.model.Image> nc.edu.ermolaxe.controller.RestController.info()
+2017-06-12 14:12:31 INFO  servlet.mvc.method.annotation.RequestMappingHandlerMapping:543 method: register - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-06-12 14:12:31 INFO  servlet.mvc.method.annotation.RequestMappingHandlerMapping:543 method: register - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-06-12 14:12:31 INFO  springframework.web.servlet.handler.SimpleUrlHandlerMapping:354 method: registerHandler - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-12 14:12:31 INFO  springframework.web.servlet.handler.SimpleUrlHandlerMapping:354 method: registerHandler - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-12 14:12:31 INFO  springframework.web.servlet.handler.SimpleUrlHandlerMapping:354 method: registerHandler - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-12 14:12:31 INFO  springframework.jmx.export.annotation.AnnotationMBeanExporter:431 method: afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+2017-06-12 14:12:31 INFO  boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:185 method: start - Tomcat started on port(s): 8080 (http)
+2017-06-12 14:12:31 INFO  nc.edu.ermolaxe.Application:57 method: logStarted - Started Application in 2.539 seconds (JVM running for 2.978)
+2017-06-12 14:12:43 INFO  org.springframework.web.servlet.DispatcherServlet:489 method: initServletBean - FrameworkServlet 'dispatcherServlet': initialization started
+2017-06-12 14:12:43 INFO  org.springframework.web.servlet.DispatcherServlet:508 method: initServletBean - FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2017-06-12 14:12:44 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:34 method: getImageList - User requested a list of new photos.
+2017-06-12 14:12:44 INFO  nc.edu.ermolaxe.utils.ImageConverter:38 method: convertImageFromUnsplash - Convert from UnsplashImage class to default Image class.
+2017-06-12 14:12:44 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:46 method: getImageList - The list of photos has been successfully received.
+2017-06-12 14:17:39 INFO  nc.edu.ermolaxe.Application:48 method: logStarting - Starting Application on Hobbit-PC with PID 2280 (D:\ermolaxe\IdeaProjects\homedev.spring\rest\rest.springboot\SpringREST\target\classes started by Александр in D:\ermolaxe\IdeaProjects\homedev.spring\rest\rest.springboot\SpringREST)
+2017-06-12 14:17:39 INFO  nc.edu.ermolaxe.Application:661 method: logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2017-06-12 14:17:39 INFO  springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext:582 method: prepareRefresh - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@10d59286: startup date [Mon Jun 12 14:17:39 GMT+04:00 2017]; root of context hierarchy
+2017-06-12 14:17:39 INFO  hibernate.validator.internal.util.Version:30 method: <clinit> - HV000001: Hibernate Validator 5.2.4.Final
+2017-06-12 14:17:41 INFO  boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:87 method: initialize - Tomcat initialized with port(s): 8080 (http)
+2017-06-12 14:17:41 INFO  org.springframework.web.context.ContextLoader:276 method: prepareEmbeddedWebApplicationContext - Root WebApplicationContext: initialization completed in 1782 ms
+2017-06-12 14:17:41 INFO  springframework.boot.web.servlet.ServletRegistrationBean:190 method: onStartup - Mapping servlet: 'dispatcherServlet' to [/]
+2017-06-12 14:17:41 INFO  springframework.boot.web.servlet.FilterRegistrationBean:258 method: configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-06-12 14:17:41 INFO  springframework.boot.web.servlet.FilterRegistrationBean:258 method: configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-06-12 14:17:41 INFO  springframework.boot.web.servlet.FilterRegistrationBean:258 method: configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-06-12 14:17:41 INFO  springframework.boot.web.servlet.FilterRegistrationBean:258 method: configure - Mapping filter: 'requestContextFilter' to: [/*]
+2017-06-12 14:17:41 WARN  springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext:550 method: refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'restController' defined in file [D:\ermolaxe\IdeaProjects\homedev.spring\rest\rest.springboot\SpringREST\target\classes\nc\edu\ermolaxe\controller\RestController.class]: Initialization of bean failed; nested exception is java.lang.IllegalStateException: Encountered invalid @Scheduled method 'info': Cron expression must consist of 6 fields (found 5 in "* 20 14 * *")
+2017-06-12 14:17:41 INFO  springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer:101 method: logAutoConfigurationReport - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-06-12 14:17:41 ERROR org.springframework.boot.SpringApplication:839 method: reportFailure - Application startup failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'restController' defined in file [D:\ermolaxe\IdeaProjects\homedev.spring\rest\rest.springboot\SpringREST\target\classes\nc\edu\ermolaxe\controller\RestController.class]: Initialization of bean failed; nested exception is java.lang.IllegalStateException: Encountered invalid @Scheduled method 'info': Cron expression must consist of 6 fields (found 5 in "* 20 14 * *")
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:754)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175)
+	at nc.edu.ermolaxe.Application.main(Application.java:21)
+Caused by: java.lang.IllegalStateException: Encountered invalid @Scheduled method 'info': Cron expression must consist of 6 fields (found 5 in "* 20 14 * *")
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.processScheduled(ScheduledAnnotationBeanPostProcessor.java:413)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.postProcessAfterInitialization(ScheduledAnnotationBeanPostProcessor.java:283)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1588)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	... 15 more
+2017-06-12 14:18:31 INFO  nc.edu.ermolaxe.Application:48 method: logStarting - Starting Application on Hobbit-PC with PID 5564 (D:\ermolaxe\IdeaProjects\homedev.spring\rest\rest.springboot\SpringREST\target\classes started by Александр in D:\ermolaxe\IdeaProjects\homedev.spring\rest\rest.springboot\SpringREST)
+2017-06-12 14:18:31 INFO  nc.edu.ermolaxe.Application:661 method: logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2017-06-12 14:18:31 INFO  springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext:582 method: prepareRefresh - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@10d59286: startup date [Mon Jun 12 14:18:31 GMT+04:00 2017]; root of context hierarchy
+2017-06-12 14:18:32 INFO  hibernate.validator.internal.util.Version:30 method: <clinit> - HV000001: Hibernate Validator 5.2.4.Final
+2017-06-12 14:18:33 INFO  boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:87 method: initialize - Tomcat initialized with port(s): 8080 (http)
+2017-06-12 14:18:33 INFO  org.springframework.web.context.ContextLoader:276 method: prepareEmbeddedWebApplicationContext - Root WebApplicationContext: initialization completed in 1350 ms
+2017-06-12 14:18:33 INFO  springframework.boot.web.servlet.ServletRegistrationBean:190 method: onStartup - Mapping servlet: 'dispatcherServlet' to [/]
+2017-06-12 14:18:33 INFO  springframework.boot.web.servlet.FilterRegistrationBean:258 method: configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-06-12 14:18:33 INFO  springframework.boot.web.servlet.FilterRegistrationBean:258 method: configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-06-12 14:18:33 INFO  springframework.boot.web.servlet.FilterRegistrationBean:258 method: configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-06-12 14:18:33 INFO  springframework.boot.web.servlet.FilterRegistrationBean:258 method: configure - Mapping filter: 'requestContextFilter' to: [/*]
+2017-06-12 14:18:33 INFO  servlet.mvc.method.annotation.RequestMappingHandlerAdapter:534 method: initControllerAdviceCache - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@10d59286: startup date [Mon Jun 12 14:18:31 GMT+04:00 2017]; root of context hierarchy
+2017-06-12 14:18:33 INFO  servlet.mvc.method.annotation.RequestMappingHandlerMapping:543 method: register - Mapped "{[/test]}" onto public java.lang.String nc.edu.ermolaxe.controller.RestController.test()
+2017-06-12 14:18:33 INFO  servlet.mvc.method.annotation.RequestMappingHandlerMapping:543 method: register - Mapped "{[/],methods=[GET]}" onto public java.util.List<nc.edu.ermolaxe.model.Image> nc.edu.ermolaxe.controller.RestController.info()
+2017-06-12 14:18:33 INFO  servlet.mvc.method.annotation.RequestMappingHandlerMapping:543 method: register - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-06-12 14:18:33 INFO  servlet.mvc.method.annotation.RequestMappingHandlerMapping:543 method: register - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-06-12 14:18:33 INFO  springframework.web.servlet.handler.SimpleUrlHandlerMapping:354 method: registerHandler - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-12 14:18:33 INFO  springframework.web.servlet.handler.SimpleUrlHandlerMapping:354 method: registerHandler - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-12 14:18:33 INFO  springframework.web.servlet.handler.SimpleUrlHandlerMapping:354 method: registerHandler - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-12 14:18:33 INFO  springframework.jmx.export.annotation.AnnotationMBeanExporter:431 method: afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+2017-06-12 14:18:33 INFO  org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor:245 method: finishRegistration - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-06-12 14:18:33 INFO  boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:185 method: start - Tomcat started on port(s): 8080 (http)
+2017-06-12 14:18:33 INFO  nc.edu.ermolaxe.Application:57 method: logStarted - Started Application in 2.437 seconds (JVM running for 2.767)
+2017-06-12 14:18:43 INFO  org.springframework.web.servlet.DispatcherServlet:489 method: initServletBean - FrameworkServlet 'dispatcherServlet': initialization started
+2017-06-12 14:18:43 INFO  org.springframework.web.servlet.DispatcherServlet:508 method: initServletBean - FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2017-06-12 14:18:43 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:34 method: getImageList - User requested a list of new photos.
+2017-06-12 14:18:44 INFO  nc.edu.ermolaxe.utils.ImageConverter:38 method: convertImageFromUnsplash - Convert from UnsplashImage class to default Image class.
+2017-06-12 14:18:44 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:42 method: getImageList - The list of photos has been successfully received.
+2017-06-12 14:20:00 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:34 method: getImageList - User requested a list of new photos.
+2017-06-12 14:20:00 INFO  nc.edu.ermolaxe.utils.ImageConverter:38 method: convertImageFromUnsplash - Convert from UnsplashImage class to default Image class.
+2017-06-12 14:20:00 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:42 method: getImageList - The list of photos has been successfully received.
+2017-06-12 14:20:01 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:34 method: getImageList - User requested a list of new photos.
+2017-06-12 14:20:01 INFO  nc.edu.ermolaxe.utils.ImageConverter:38 method: convertImageFromUnsplash - Convert from UnsplashImage class to default Image class.
+2017-06-12 14:20:01 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:42 method: getImageList - The list of photos has been successfully received.
+2017-06-12 14:20:02 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:34 method: getImageList - User requested a list of new photos.
+2017-06-12 14:20:02 INFO  nc.edu.ermolaxe.utils.ImageConverter:38 method: convertImageFromUnsplash - Convert from UnsplashImage class to default Image class.
+2017-06-12 14:20:02 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:42 method: getImageList - The list of photos has been successfully received.
+2017-06-12 14:20:03 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:34 method: getImageList - User requested a list of new photos.
+2017-06-12 14:20:03 INFO  nc.edu.ermolaxe.utils.ImageConverter:38 method: convertImageFromUnsplash - Convert from UnsplashImage class to default Image class.
+2017-06-12 14:20:03 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:42 method: getImageList - The list of photos has been successfully received.
+2017-06-12 14:20:04 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:34 method: getImageList - User requested a list of new photos.
+2017-06-12 14:20:04 INFO  nc.edu.ermolaxe.utils.ImageConverter:38 method: convertImageFromUnsplash - Convert from UnsplashImage class to default Image class.
+2017-06-12 14:20:04 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:42 method: getImageList - The list of photos has been successfully received.
+2017-06-12 14:20:05 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:34 method: getImageList - User requested a list of new photos.
+2017-06-12 14:20:05 INFO  nc.edu.ermolaxe.utils.ImageConverter:38 method: convertImageFromUnsplash - Convert from UnsplashImage class to default Image class.
+2017-06-12 14:20:05 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:42 method: getImageList - The list of photos has been successfully received.
+2017-06-12 14:20:06 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:34 method: getImageList - User requested a list of new photos.
+2017-06-12 14:20:06 INFO  nc.edu.ermolaxe.utils.ImageConverter:38 method: convertImageFromUnsplash - Convert from UnsplashImage class to default Image class.
+2017-06-12 14:20:06 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:42 method: getImageList - The list of photos has been successfully received.
+2017-06-12 14:20:07 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:34 method: getImageList - User requested a list of new photos.
+2017-06-12 14:20:07 INFO  nc.edu.ermolaxe.utils.ImageConverter:38 method: convertImageFromUnsplash - Convert from UnsplashImage class to default Image class.
+2017-06-12 14:20:07 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:42 method: getImageList - The list of photos has been successfully received.
+2017-06-12 14:20:08 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:34 method: getImageList - User requested a list of new photos.
+2017-06-12 14:20:08 INFO  nc.edu.ermolaxe.utils.ImageConverter:38 method: convertImageFromUnsplash - Convert from UnsplashImage class to default Image class.
+2017-06-12 14:20:08 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:42 method: getImageList - The list of photos has been successfully received.
+2017-06-12 14:20:09 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:34 method: getImageList - User requested a list of new photos.
+2017-06-12 14:20:09 INFO  nc.edu.ermolaxe.utils.ImageConverter:38 method: convertImageFromUnsplash - Convert from UnsplashImage class to default Image class.
+2017-06-12 14:20:09 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:42 method: getImageList - The list of photos has been successfully received.
+2017-06-12 14:20:10 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:34 method: getImageList - User requested a list of new photos.
+2017-06-12 14:20:10 INFO  nc.edu.ermolaxe.utils.ImageConverter:38 method: convertImageFromUnsplash - Convert from UnsplashImage class to default Image class.
+2017-06-12 14:20:10 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:42 method: getImageList - The list of photos has been successfully received.
+2017-06-12 14:20:11 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:34 method: getImageList - User requested a list of new photos.
+2017-06-12 14:20:11 INFO  nc.edu.ermolaxe.utils.ImageConverter:38 method: convertImageFromUnsplash - Convert from UnsplashImage class to default Image class.
+2017-06-12 14:20:11 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:42 method: getImageList - The list of photos has been successfully received.
+2017-06-12 14:20:12 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:34 method: getImageList - User requested a list of new photos.
+2017-06-12 14:20:12 INFO  nc.edu.ermolaxe.utils.ImageConverter:38 method: convertImageFromUnsplash - Convert from UnsplashImage class to default Image class.
+2017-06-12 14:20:12 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:42 method: getImageList - The list of photos has been successfully received.
+2017-06-12 14:20:13 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:34 method: getImageList - User requested a list of new photos.
+2017-06-12 14:20:13 INFO  nc.edu.ermolaxe.utils.ImageConverter:38 method: convertImageFromUnsplash - Convert from UnsplashImage class to default Image class.
+2017-06-12 14:20:13 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:42 method: getImageList - The list of photos has been successfully received.
+2017-06-12 14:20:14 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:34 method: getImageList - User requested a list of new photos.
+2017-06-12 14:20:14 INFO  nc.edu.ermolaxe.utils.ImageConverter:38 method: convertImageFromUnsplash - Convert from UnsplashImage class to default Image class.
+2017-06-12 14:20:14 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:42 method: getImageList - The list of photos has been successfully received.
+2017-06-12 14:20:15 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:34 method: getImageList - User requested a list of new photos.
+2017-06-12 14:20:15 INFO  nc.edu.ermolaxe.utils.ImageConverter:38 method: convertImageFromUnsplash - Convert from UnsplashImage class to default Image class.
+2017-06-12 14:20:15 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:42 method: getImageList - The list of photos has been successfully received.
+2017-06-12 14:20:16 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:34 method: getImageList - User requested a list of new photos.
+2017-06-12 14:20:16 INFO  nc.edu.ermolaxe.utils.ImageConverter:38 method: convertImageFromUnsplash - Convert from UnsplashImage class to default Image class.
+2017-06-12 14:20:16 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:42 method: getImageList - The list of photos has been successfully received.
+2017-06-12 14:20:17 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:34 method: getImageList - User requested a list of new photos.
+2017-06-12 14:20:17 INFO  nc.edu.ermolaxe.utils.ImageConverter:38 method: convertImageFromUnsplash - Convert from UnsplashImage class to default Image class.
+2017-06-12 14:20:17 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:42 method: getImageList - The list of photos has been successfully received.
+2017-06-12 14:20:18 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:34 method: getImageList - User requested a list of new photos.
+2017-06-12 14:20:18 INFO  nc.edu.ermolaxe.utils.ImageConverter:38 method: convertImageFromUnsplash - Convert from UnsplashImage class to default Image class.
+2017-06-12 14:20:18 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:42 method: getImageList - The list of photos has been successfully received.
+2017-06-12 14:20:19 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:34 method: getImageList - User requested a list of new photos.
+2017-06-12 14:20:19 INFO  nc.edu.ermolaxe.utils.ImageConverter:38 method: convertImageFromUnsplash - Convert from UnsplashImage class to default Image class.
+2017-06-12 14:20:19 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:42 method: getImageList - The list of photos has been successfully received.
+2017-06-12 14:20:20 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:34 method: getImageList - User requested a list of new photos.
+2017-06-12 14:20:20 INFO  nc.edu.ermolaxe.utils.ImageConverter:38 method: convertImageFromUnsplash - Convert from UnsplashImage class to default Image class.
+2017-06-12 14:20:20 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:42 method: getImageList - The list of photos has been successfully received.
+2017-06-12 14:20:20 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:34 method: getImageList - User requested a list of new photos.
+2017-06-12 14:20:21 INFO  nc.edu.ermolaxe.utils.ImageConverter:38 method: convertImageFromUnsplash - Convert from UnsplashImage class to default Image class.
+2017-06-12 14:20:21 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:42 method: getImageList - The list of photos has been successfully received.
+2017-06-12 14:20:22 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:34 method: getImageList - User requested a list of new photos.
+2017-06-12 14:20:22 INFO  nc.edu.ermolaxe.utils.ImageConverter:38 method: convertImageFromUnsplash - Convert from UnsplashImage class to default Image class.
+2017-06-12 14:20:22 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:42 method: getImageList - The list of photos has been successfully received.
+2017-06-12 14:20:23 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:34 method: getImageList - User requested a list of new photos.
+2017-06-12 14:20:23 INFO  nc.edu.ermolaxe.utils.ImageConverter:38 method: convertImageFromUnsplash - Convert from UnsplashImage class to default Image class.
+2017-06-12 14:20:23 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:42 method: getImageList - The list of photos has been successfully received.
+2017-06-12 14:20:24 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:34 method: getImageList - User requested a list of new photos.
+2017-06-12 14:20:24 INFO  nc.edu.ermolaxe.utils.ImageConverter:38 method: convertImageFromUnsplash - Convert from UnsplashImage class to default Image class.
+2017-06-12 14:20:24 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:42 method: getImageList - The list of photos has been successfully received.
+2017-06-12 14:20:25 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:34 method: getImageList - User requested a list of new photos.
+2017-06-12 14:20:25 INFO  nc.edu.ermolaxe.utils.ImageConverter:38 method: convertImageFromUnsplash - Convert from UnsplashImage class to default Image class.
+2017-06-12 14:20:25 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:42 method: getImageList - The list of photos has been successfully received.
+2017-06-12 14:20:26 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:34 method: getImageList - User requested a list of new photos.
+2017-06-12 14:20:26 INFO  nc.edu.ermolaxe.utils.ImageConverter:38 method: convertImageFromUnsplash - Convert from UnsplashImage class to default Image class.
+2017-06-12 14:20:26 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:42 method: getImageList - The list of photos has been successfully received.
+2017-06-12 14:20:27 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:34 method: getImageList - User requested a list of new photos.
+2017-06-12 14:20:27 INFO  nc.edu.ermolaxe.utils.ImageConverter:38 method: convertImageFromUnsplash - Convert from UnsplashImage class to default Image class.
+2017-06-12 14:20:27 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:42 method: getImageList - The list of photos has been successfully received.
+2017-06-12 14:20:28 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:34 method: getImageList - User requested a list of new photos.
+2017-06-12 14:20:28 INFO  nc.edu.ermolaxe.utils.ImageConverter:38 method: convertImageFromUnsplash - Convert from UnsplashImage class to default Image class.
+2017-06-12 14:20:28 INFO  edu.ermolaxe.service.impl.UnsplashDaoImpl:42 method: getImageList - The list of photos has been successfully received.

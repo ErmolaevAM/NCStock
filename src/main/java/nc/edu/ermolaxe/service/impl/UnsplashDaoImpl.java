@@ -36,10 +36,6 @@ public class UnsplashDaoImpl implements ImageServiceDAO {
 
             result = ImageConverter.convertImageFromUnsplash(imgList);
 
-            /*------test------*/
-            for (Image item : result) {
-                System.out.println(item.toString());
-            }
             LOGGER.info("The list of photos has been successfully received.");
         } catch (IOException ex) {
             StringBuilder msg = new StringBuilder();
@@ -59,8 +55,4 @@ public class UnsplashDaoImpl implements ImageServiceDAO {
         return null;
     }
 
-    /*@Bean
-    private ObjectMapper objectMapper(){
-        return new ObjectMapper();
-    }*/
 }
