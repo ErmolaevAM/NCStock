@@ -27,7 +27,7 @@ public class RestController {
     private ImageServiceDAO pixabayService;
 
 
-    @Autowired
+    /*@Autowired
     @Qualifier()
     private ImageServiceDAO fullService;
 
@@ -40,7 +40,7 @@ public class RestController {
     @RequestMapping(value = "/photosbytag", method = RequestMethod.GET)
     private @ResponseBody List<Image> getByTag(@RequestParam(value = "tag")String tag) {
         return fullService.getPhotoByTag(tag);
-    }
+    }*/
 
 
 //    test methods
