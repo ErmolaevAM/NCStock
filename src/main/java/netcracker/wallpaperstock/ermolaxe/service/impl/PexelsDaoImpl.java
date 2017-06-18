@@ -47,7 +47,7 @@ public class PexelsDaoImpl implements ImageServiceDAO {
         return result;
     }
 
-    public List<Image> getPhotoByTag(String tag) {
+    public List<Image> getPhotoByTag(String tag, int count) {
         return null;
     }
 }
