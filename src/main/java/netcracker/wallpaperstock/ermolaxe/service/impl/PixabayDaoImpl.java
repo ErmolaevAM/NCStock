@@ -47,6 +47,7 @@ public class PixabayDaoImpl implements ImageServiceDAO {
 
         try {
             LOGGER.warn("0");
+
             PixabayJsonResponse response = objectMapper.readValue(new URL(onePageUrl), PixabayJsonResponse.class);
             LOGGER.warn("1");
             result = ImageConverter.convertImageFromPixabay(response);
@@ -72,7 +73,7 @@ public class PixabayDaoImpl implements ImageServiceDAO {
         return result;
     }
 
-    public List<Image> getPhotoByTag(String tag) {
+    public List<Image> getPhotoByTag(String tag, int count) {
         LOGGER.info("WallpaperStock: User requested a list of photos from Pixabay service with tag: "+tag);
         List<Image> result = new ArrayList<Image>();
         if (pixabayCategory.contains(tag)) {

@@ -26,9 +26,8 @@ public class RestController {
     @Qualifier("pixabay")
     private ImageServiceDAO pixabayService;
 
-
-    /*@Autowired
-    @Qualifier()
+    @Autowired
+    @Qualifier("fullservice")
     private ImageServiceDAO fullService;
 
     @Scheduled(cron = "0 0 0 * * *")
@@ -39,8 +38,8 @@ public class RestController {
 
     @RequestMapping(value = "/photosbytag", method = RequestMethod.GET)
     private @ResponseBody List<Image> getByTag(@RequestParam(value = "tag")String tag) {
-        return fullService.getPhotoByTag(tag);
-    }*/
+        return fullService.getPhotoByTag(tag, 1);
+    }
 
 
 //    test methods
@@ -54,9 +53,5 @@ public class RestController {
         return pixabayService.getImageList();
     }
 
-    @RequestMapping(value = "/pixabay/findbytag", method = RequestMethod.GET)
-    public @ResponseBody List<Image> getPixabayImageByTag(@RequestParam(name = "tag")String tag) {
-        return pixabayService.getPhotoByTag(tag);
-    }
 
 }

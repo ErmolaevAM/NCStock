@@ -34,7 +34,7 @@ public class FullServiceDaoImpl implements ImageServiceDAO {
     }
 
     @Override
-    public List<Image> getPhotoByTag(String tag) {
+    public List<Image> getPhotoByTag(String tag, int count) {
         //надо ходить в базу и искать там фотки и если их меньше 30 то искать в сервисах
         return null;
     }

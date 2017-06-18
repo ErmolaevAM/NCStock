@@ -9,5 +9,5 @@ import java.util.List;
  */
 public interface ImageServiceDAO {
     List<Image> getImageList();
-    List<Image> getPhotoByTag(String tag);
+    List<Image> getPhotoByTag(String tag, int count);
 }

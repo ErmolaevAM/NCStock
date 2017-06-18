@@ -1,0 +1,125 @@
+2017-06-16 13:48:41 INFO  netcracker.wallpaperstock.ermolaxe.Application:48 method: logStarting - Starting Application on Hobbit-PC with PID 3568 (D:\ermolaxe\IdeaProjects\homedev.spring\WallpaperStock\target\classes started by Александр in D:\ermolaxe\IdeaProjects\homedev.spring\WallpaperStock)
+2017-06-16 13:48:41 INFO  netcracker.wallpaperstock.ermolaxe.Application:661 method: logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2017-06-16 13:48:41 INFO  springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext:582 method: prepareRefresh - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@23986957: startup date [Fri Jun 16 13:48:41 GMT+04:00 2017]; root of context hierarchy
+2017-06-16 13:48:42 INFO  hibernate.validator.internal.util.Version:30 method: <clinit> - HV000001: Hibernate Validator 5.2.4.Final
+2017-06-16 13:48:44 INFO  boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:87 method: initialize - Tomcat initialized with port(s): 8080 (http)
+2017-06-16 13:48:45 INFO  org.springframework.web.context.ContextLoader:276 method: prepareEmbeddedWebApplicationContext - Root WebApplicationContext: initialization completed in 3810 ms
+2017-06-16 13:48:45 INFO  springframework.boot.web.servlet.ServletRegistrationBean:190 method: onStartup - Mapping servlet: 'dispatcherServlet' to [/]
+2017-06-16 13:48:45 INFO  springframework.boot.web.servlet.FilterRegistrationBean:258 method: configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-06-16 13:48:45 INFO  springframework.boot.web.servlet.FilterRegistrationBean:258 method: configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-06-16 13:48:45 INFO  springframework.boot.web.servlet.FilterRegistrationBean:258 method: configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-06-16 13:48:45 INFO  springframework.boot.web.servlet.FilterRegistrationBean:258 method: configure - Mapping filter: 'requestContextFilter' to: [/*]
+2017-06-16 13:48:45 WARN  springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext:550 method: refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'restController': Unsatisfied dependency expressed through field 'fullService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'netcracker.wallpaperstock.ermolaxe.service.ImageServiceDAO' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true), @org.springframework.beans.factory.annotation.Qualifier(value=)}
+2017-06-16 13:48:45 INFO  springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer:101 method: logAutoConfigurationReport - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-06-16 13:48:45 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:42 method: report - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field fullService in netcracker.wallpaperstock.ermolaxe.controller.RestController required a bean of type 'netcracker.wallpaperstock.ermolaxe.service.ImageServiceDAO' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'netcracker.wallpaperstock.ermolaxe.service.ImageServiceDAO' in your configuration.
+
+2017-06-16 13:49:39 INFO  netcracker.wallpaperstock.ermolaxe.Application:48 method: logStarting - Starting Application on Hobbit-PC with PID 5776 (D:\ermolaxe\IdeaProjects\homedev.spring\WallpaperStock\target\classes started by Александр in D:\ermolaxe\IdeaProjects\homedev.spring\WallpaperStock)
+2017-06-16 13:49:39 INFO  netcracker.wallpaperstock.ermolaxe.Application:661 method: logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2017-06-16 13:49:39 INFO  springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext:582 method: prepareRefresh - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@23986957: startup date [Fri Jun 16 13:49:39 GMT+04:00 2017]; root of context hierarchy
+2017-06-16 13:49:40 INFO  hibernate.validator.internal.util.Version:30 method: <clinit> - HV000001: Hibernate Validator 5.2.4.Final
+2017-06-16 13:49:42 INFO  boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:87 method: initialize - Tomcat initialized with port(s): 8080 (http)
+2017-06-16 13:49:42 INFO  org.springframework.web.context.ContextLoader:276 method: prepareEmbeddedWebApplicationContext - Root WebApplicationContext: initialization completed in 2901 ms
+2017-06-16 13:49:42 INFO  springframework.boot.web.servlet.ServletRegistrationBean:190 method: onStartup - Mapping servlet: 'dispatcherServlet' to [/]
+2017-06-16 13:49:42 INFO  springframework.boot.web.servlet.FilterRegistrationBean:258 method: configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-06-16 13:49:42 INFO  springframework.boot.web.servlet.FilterRegistrationBean:258 method: configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-06-16 13:49:42 INFO  springframework.boot.web.servlet.FilterRegistrationBean:258 method: configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-06-16 13:49:42 INFO  springframework.boot.web.servlet.FilterRegistrationBean:258 method: configure - Mapping filter: 'requestContextFilter' to: [/*]
+2017-06-16 13:49:42 WARN  springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext:550 method: refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'restController': Unsatisfied dependency expressed through field 'fullService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'netcracker.wallpaperstock.ermolaxe.service.ImageServiceDAO' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true), @org.springframework.beans.factory.annotation.Qualifier(value=)}
+2017-06-16 13:49:42 INFO  springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer:101 method: logAutoConfigurationReport - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-06-16 13:49:42 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:42 method: report - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field fullService in netcracker.wallpaperstock.ermolaxe.controller.RestController required a bean of type 'netcracker.wallpaperstock.ermolaxe.service.ImageServiceDAO' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'netcracker.wallpaperstock.ermolaxe.service.ImageServiceDAO' in your configuration.
+
+2017-06-16 13:50:25 INFO  netcracker.wallpaperstock.ermolaxe.Application:48 method: logStarting - Starting Application on Hobbit-PC with PID 4576 (D:\ermolaxe\IdeaProjects\homedev.spring\WallpaperStock\target\classes started by Александр in D:\ermolaxe\IdeaProjects\homedev.spring\WallpaperStock)
+2017-06-16 13:50:25 INFO  netcracker.wallpaperstock.ermolaxe.Application:661 method: logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2017-06-16 13:50:25 INFO  springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext:582 method: prepareRefresh - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@23986957: startup date [Fri Jun 16 13:50:25 GMT+04:00 2017]; root of context hierarchy
+2017-06-16 13:50:26 INFO  hibernate.validator.internal.util.Version:30 method: <clinit> - HV000001: Hibernate Validator 5.2.4.Final
+2017-06-16 13:50:28 INFO  boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:87 method: initialize - Tomcat initialized with port(s): 8080 (http)
+2017-06-16 13:50:29 INFO  org.springframework.web.context.ContextLoader:276 method: prepareEmbeddedWebApplicationContext - Root WebApplicationContext: initialization completed in 3492 ms
+2017-06-16 13:50:29 INFO  springframework.boot.web.servlet.ServletRegistrationBean:190 method: onStartup - Mapping servlet: 'dispatcherServlet' to [/]
+2017-06-16 13:50:29 INFO  springframework.boot.web.servlet.FilterRegistrationBean:258 method: configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-06-16 13:50:29 INFO  springframework.boot.web.servlet.FilterRegistrationBean:258 method: configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-06-16 13:50:29 INFO  springframework.boot.web.servlet.FilterRegistrationBean:258 method: configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-06-16 13:50:29 INFO  springframework.boot.web.servlet.FilterRegistrationBean:258 method: configure - Mapping filter: 'requestContextFilter' to: [/*]
+2017-06-16 13:50:29 INFO  servlet.mvc.method.annotation.RequestMappingHandlerAdapter:534 method: initControllerAdviceCache - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@23986957: startup date [Fri Jun 16 13:50:25 GMT+04:00 2017]; root of context hierarchy
+2017-06-16 13:50:29 INFO  servlet.mvc.method.annotation.RequestMappingHandlerMapping:543 method: register - Mapped "{[/pixabay/findbytag],methods=[GET]}" onto public java.util.List<netcracker.wallpaperstock.ermolaxe.model.Image> netcracker.wallpaperstock.ermolaxe.controller.RestController.getPixabayImageByTag(java.lang.String)
+2017-06-16 13:50:29 INFO  servlet.mvc.method.annotation.RequestMappingHandlerMapping:543 method: register - Mapped "{[/unsplash],methods=[GET]}" onto public java.util.List<netcracker.wallpaperstock.ermolaxe.model.Image> netcracker.wallpaperstock.ermolaxe.controller.RestController.getUnsplashImage()
+2017-06-16 13:50:29 INFO  servlet.mvc.method.annotation.RequestMappingHandlerMapping:543 method: register - Mapped "{[/pixabay],methods=[GET]}" onto public java.util.List<netcracker.wallpaperstock.ermolaxe.model.Image> netcracker.wallpaperstock.ermolaxe.controller.RestController.getPixabayImage()
+2017-06-16 13:50:29 INFO  servlet.mvc.method.annotation.RequestMappingHandlerMapping:543 method: register - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-06-16 13:50:29 INFO  servlet.mvc.method.annotation.RequestMappingHandlerMapping:543 method: register - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-06-16 13:50:29 INFO  springframework.web.servlet.handler.SimpleUrlHandlerMapping:354 method: registerHandler - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-16 13:50:29 INFO  springframework.web.servlet.handler.SimpleUrlHandlerMapping:354 method: registerHandler - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-16 13:50:29 INFO  springframework.web.servlet.handler.SimpleUrlHandlerMapping:354 method: registerHandler - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-16 13:50:29 INFO  springframework.jmx.export.annotation.AnnotationMBeanExporter:431 method: afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+2017-06-16 13:50:30 INFO  boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:185 method: start - Tomcat started on port(s): 8080 (http)
+2017-06-16 13:50:30 INFO  netcracker.wallpaperstock.ermolaxe.Application:57 method: logStarted - Started Application in 5.021 seconds (JVM running for 5.503)
+2017-06-16 13:50:47 INFO  org.springframework.web.servlet.DispatcherServlet:489 method: initServletBean - FrameworkServlet 'dispatcherServlet': initialization started
+2017-06-16 13:50:47 INFO  org.springframework.web.servlet.DispatcherServlet:508 method: initServletBean - FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2017-06-16 13:50:47 INFO  wallpaperstock.ermolaxe.service.impl.UnsplashDaoImpl:34 method: getImageList - WallpaperStock: User requested a list of new photos from Unsplash service.
+2017-06-16 13:50:49 INFO  netcracker.wallpaperstock.ermolaxe.utils.ImageConverter:37 method: convertImageFromUnsplash - WallpaperStock: Convert from UnsplashImage class to default Image class.
+2017-06-16 13:50:49 INFO  wallpaperstock.ermolaxe.service.impl.UnsplashDaoImpl:42 method: getImageList - WallpaperStock: The list of photos has been successfully received from Unsplash.
+2017-06-16 13:52:29 INFO  wallpaperstock.ermolaxe.service.impl.PixabayDaoImpl:45 method: getImageList - WallpaperStock: User requested a list of new photos from Pixabay service.
+2017-06-16 13:52:29 WARN  wallpaperstock.ermolaxe.service.impl.PixabayDaoImpl:49 method: getImageList - 0
+2017-06-16 13:52:29 ERROR wallpaperstock.ermolaxe.service.impl.PixabayDaoImpl:70 method: getImageList - WallpaperStock: Something went wrong! With message: [sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target] and stacktrace [[Ljava.lang.StackTraceElement;@3686adf6]
+2017-06-16 15:34:15 INFO  netcracker.wallpaperstock.ermolaxe.Application:48 method: logStarting - Starting Application on Hobbit-PC with PID 1572 (D:\ermolaxe\IdeaProjects\homedev.spring\WallpaperStock\target\classes started by Александр in D:\ermolaxe\IdeaProjects\homedev.spring\WallpaperStock)
+2017-06-16 15:34:15 INFO  netcracker.wallpaperstock.ermolaxe.Application:661 method: logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2017-06-16 15:34:15 INFO  springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext:582 method: prepareRefresh - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@23986957: startup date [Fri Jun 16 15:34:15 GMT+04:00 2017]; root of context hierarchy
+2017-06-16 15:34:16 INFO  hibernate.validator.internal.util.Version:30 method: <clinit> - HV000001: Hibernate Validator 5.2.4.Final
+2017-06-16 15:34:18 INFO  boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:87 method: initialize - Tomcat initialized with port(s): 8080 (http)
+2017-06-16 15:34:18 INFO  org.springframework.web.context.ContextLoader:276 method: prepareEmbeddedWebApplicationContext - Root WebApplicationContext: initialization completed in 2991 ms
+2017-06-16 15:34:18 INFO  springframework.boot.web.servlet.ServletRegistrationBean:190 method: onStartup - Mapping servlet: 'dispatcherServlet' to [/]
+2017-06-16 15:34:18 INFO  springframework.boot.web.servlet.FilterRegistrationBean:258 method: configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-06-16 15:34:18 INFO  springframework.boot.web.servlet.FilterRegistrationBean:258 method: configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-06-16 15:34:18 INFO  springframework.boot.web.servlet.FilterRegistrationBean:258 method: configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-06-16 15:34:18 INFO  springframework.boot.web.servlet.FilterRegistrationBean:258 method: configure - Mapping filter: 'requestContextFilter' to: [/*]
+2017-06-16 15:34:19 INFO  servlet.mvc.method.annotation.RequestMappingHandlerAdapter:534 method: initControllerAdviceCache - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@23986957: startup date [Fri Jun 16 15:34:15 GMT+04:00 2017]; root of context hierarchy
+2017-06-16 15:34:19 INFO  servlet.mvc.method.annotation.RequestMappingHandlerMapping:543 method: register - Mapped "{[/pixabay/findbytag],methods=[GET]}" onto public java.util.List<netcracker.wallpaperstock.ermolaxe.model.Image> netcracker.wallpaperstock.ermolaxe.controller.RestController.getPixabayImageByTag(java.lang.String)
+2017-06-16 15:34:19 INFO  servlet.mvc.method.annotation.RequestMappingHandlerMapping:543 method: register - Mapped "{[/photos],methods=[GET]}" onto private java.util.List<netcracker.wallpaperstock.ermolaxe.model.Image> netcracker.wallpaperstock.ermolaxe.controller.RestController.getPhotots()
+2017-06-16 15:34:19 INFO  servlet.mvc.method.annotation.RequestMappingHandlerMapping:543 method: register - Mapped "{[/unsplash],methods=[GET]}" onto public java.util.List<netcracker.wallpaperstock.ermolaxe.model.Image> netcracker.wallpaperstock.ermolaxe.controller.RestController.getUnsplashImage()
+2017-06-16 15:34:19 INFO  servlet.mvc.method.annotation.RequestMappingHandlerMapping:543 method: register - Mapped "{[/pixabay],methods=[GET]}" onto public java.util.List<netcracker.wallpaperstock.ermolaxe.model.Image> netcracker.wallpaperstock.ermolaxe.controller.RestController.getPixabayImage()
+2017-06-16 15:34:19 INFO  servlet.mvc.method.annotation.RequestMappingHandlerMapping:543 method: register - Mapped "{[/photosbytag],methods=[GET]}" onto private java.util.List<netcracker.wallpaperstock.ermolaxe.model.Image> netcracker.wallpaperstock.ermolaxe.controller.RestController.getByTag(java.lang.String)
+2017-06-16 15:34:19 INFO  servlet.mvc.method.annotation.RequestMappingHandlerMapping:543 method: register - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-06-16 15:34:19 INFO  servlet.mvc.method.annotation.RequestMappingHandlerMapping:543 method: register - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-06-16 15:34:19 INFO  springframework.web.servlet.handler.SimpleUrlHandlerMapping:354 method: registerHandler - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-16 15:34:19 INFO  springframework.web.servlet.handler.SimpleUrlHandlerMapping:354 method: registerHandler - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-16 15:34:19 INFO  springframework.web.servlet.handler.SimpleUrlHandlerMapping:354 method: registerHandler - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-16 15:34:19 INFO  springframework.jmx.export.annotation.AnnotationMBeanExporter:431 method: afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+2017-06-16 15:34:19 INFO  org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor:245 method: finishRegistration - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-06-16 15:34:19 INFO  boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:185 method: start - Tomcat started on port(s): 8080 (http)
+2017-06-16 15:34:19 INFO  netcracker.wallpaperstock.ermolaxe.Application:57 method: logStarted - Started Application in 5.125 seconds (JVM running for 6.548)
+2017-06-16 15:34:36 INFO  org.springframework.web.servlet.DispatcherServlet:489 method: initServletBean - FrameworkServlet 'dispatcherServlet': initialization started
+2017-06-16 15:34:36 INFO  org.springframework.web.servlet.DispatcherServlet:508 method: initServletBean - FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2017-06-16 15:34:37 INFO  wallpaperstock.ermolaxe.service.impl.UnsplashDaoImpl:34 method: getImageList - WallpaperStock: User requested a list of new photos from Unsplash service.
+2017-06-16 15:34:41 INFO  netcracker.wallpaperstock.ermolaxe.utils.ImageConverter:37 method: convertImageFromUnsplash - WallpaperStock: Convert from UnsplashImage class to default Image class.
+2017-06-16 15:34:41 INFO  wallpaperstock.ermolaxe.service.impl.UnsplashDaoImpl:42 method: getImageList - WallpaperStock: The list of photos has been successfully received from Unsplash.
+2017-06-16 15:34:41 INFO  wallpaperstock.ermolaxe.service.impl.PixabayDaoImpl:45 method: getImageList - WallpaperStock: User requested a list of new photos from Pixabay service.
+2017-06-16 15:34:41 WARN  wallpaperstock.ermolaxe.service.impl.PixabayDaoImpl:49 method: getImageList - 0
+2017-06-16 15:34:41 ERROR wallpaperstock.ermolaxe.service.impl.PixabayDaoImpl:70 method: getImageList - WallpaperStock: Something went wrong! With message: [sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target] and stacktrace [[Ljava.lang.StackTraceElement;@12d1cd1a]
