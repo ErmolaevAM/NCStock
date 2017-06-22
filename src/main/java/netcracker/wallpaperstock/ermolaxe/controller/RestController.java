@@ -53,5 +53,9 @@ public class RestController {
         return pixabayService.getImageList();
     }
 
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public @ResponseBody String startPage() {
+        return "Hello world!";
+    }
 
 }
