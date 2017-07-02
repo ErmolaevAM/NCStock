@@ -1,6 +1,7 @@
 package netcracker.wallpaperstock.ermolaxe.service.impl;
 
 import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import netcracker.wallpaperstock.ermolaxe.model.Image;
@@ -11,6 +12,9 @@ import netcracker.wallpaperstock.ermolaxe.utils.ImageConverter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.slf4j.event.Level;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Required;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
@@ -30,7 +34,9 @@ public class UnsplashDaoImpl implements ImageServiceDAO {
     //вопрос: как быть со страницей? Можно брать рандомное число при каждом новом запросе в качестве страницы (как не выйти за границы кол-ва всех страниц)?
     private static final String photoByCategory = "https://api.unsplash.com/search/photos?client_id=17ffc1d2fd01e2390b5e69a6ae6a970d1299966a33d4baa56f61f3816265b64f&page=1&per_page=%d&query=&s";
 
-    private ObjectMapper objectMapper = new ObjectMapper();
+    @Autowired
+    @Qualifier("jacksonmapper")
+    private ObjectMapper objectMapper;
 
     public UnsplashDaoImpl() {
     }
@@ -83,4 +89,5 @@ public class UnsplashDaoImpl implements ImageServiceDAO {
 
         return result;
     }
+
 }

@@ -1,5 +1,7 @@
 package netcracker.wallpaperstock.ermolaxe.configuration;
 
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import netcracker.wallpaperstock.ermolaxe.service.ImageServiceDAO;
 import netcracker.wallpaperstock.ermolaxe.service.impl.FullServiceDaoImpl;
 import netcracker.wallpaperstock.ermolaxe.service.impl.PixabayDaoImpl;
@@ -26,6 +28,13 @@ public class BeanConfiguration {
     @Bean(name = "fullservice")
     public ImageServiceDAO fullService() {
         return new FullServiceDaoImpl();
+    }
+
+    @Bean(name = "jacksonmapper")
+    public ObjectMapper objectMapper(){
+        ObjectMapper objectMapper = new ObjectMapper();
+        objectMapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
+        return objectMapper;
     }
 }
 

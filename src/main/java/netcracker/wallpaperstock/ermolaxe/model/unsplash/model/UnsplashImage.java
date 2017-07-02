@@ -24,6 +24,8 @@ public class UnsplashImage {
 
     private boolean liked_by_user;
 
+    private String description;
+
     private User user;
 
     private List<String> current_user_collections;
@@ -37,6 +39,14 @@ public class UnsplashImage {
     /*------constructors and get/set methods------*/
 
     public UnsplashImage() {
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public String getId() {
